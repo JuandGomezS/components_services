@@ -1,8 +1,12 @@
 <p><input type="text" [(ngModel)]="imgParent"></p>
-<app-image [img]="imgParent"></app-image>
+<app-image [img]="imgParent" (loaded)="onLoaded($event)" ></app-image>
 
-<div>
+<!-- <div>
   <p>Ingresa un nombre:</p>
   <p><input type="text" [(ngModel)]="texto"></p>
   <app-input-function [saludar] = "texto"></app-input-function>
-</div>
+</div> -->
+
+<hr>
+
+<app-product [product]="product" *ngFor="let product of products" ></app-product>
