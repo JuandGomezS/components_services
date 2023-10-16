@@ -1,2 +1,8 @@
 <p><input type="text" [(ngModel)]="imgParent"></p>
 <app-image [img]="imgParent"></app-image>
+
+<div>
+  <p>Ingresa un nombre:</p>
+  <p><input type="text" [(ngModel)]="texto"></p>
+  <app-input-function [saludar] = "texto"></app-input-function>
+</div>

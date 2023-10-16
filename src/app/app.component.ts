@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'components_services';
   imgParent: string = 'https://www.w3schools.com/howto/img_avatar2.png';
+  texto: string = '';
 }
